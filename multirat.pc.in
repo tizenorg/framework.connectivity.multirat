@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: multirat
+Description: Smart Bonding Library
+Version: 1.0
+Requires: dlog dbus-glib-1
+Libs: -L${libdir} -lmultirat
+Cflags: -I${includedir}/multirat
